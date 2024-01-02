@@ -1,0 +1,43 @@
+
+main.o:
+00000000 B bss_var
+00000000 R const_variables
+00000000 D g_variables
+00000000 T main
+
+startup.o:
+         U _E_bss
+         U _E_data
+         U _E_text
+         U _S_bss
+         U _S_data
+         U _stack_top
+00000000 W BUS_fault_handler
+00000000 T Default_handler
+00000000 W H_fault_handler
+         U main
+00000000 W MM_fault_handler
+00000000 W NMI_handler
+0000000c T reset_handler
+00000000 W Usage_fault_handler
+00000000 D vectors
+
+Lab2_cortex_m3.elf:
+20000007 B _E_bss
+20000004 D _E_data
+08000127 T _E_text
+20000004 B _S_bss
+20000000 D _S_data
+20001008 B _stack_top
+20000004 B bss_var
+08000094 W BUS_fault_handler
+08000124 T const_variables
+08000094 T Default_handler
+20000000 D g_variables
+08000094 W H_fault_handler
+0800001c T main
+08000094 W MM_fault_handler
+08000094 W NMI_handler
+080000a0 T reset_handler
+08000094 W Usage_fault_handler
+08000000 T vectors
