@@ -1,0 +1,116 @@
+
+main.o:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 g     F .text	0000008c main
+
+
+
+startup.o:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 startup.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l       .bss	00000400 Stack_top
+00000000 l    d  .vectors	00000000 .vectors
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 g     F .text	0000000c Default_handler
+0000000c g     F .text	00000084 reset_handler
+00000000  w    F .text	0000000c H_fault_handler
+00000000  w    F .text	0000000c NMI_handler
+00000000 g     O .vectors	00000010 g_p_fn_vectors
+00000000         *UND*	00000000 main
+00000000         *UND*	00000000 _E_data
+00000000         *UND*	00000000 _S_data
+00000000         *UND*	00000000 _E_text
+00000000         *UND*	00000000 _E_bss
+00000000         *UND*	00000000 _S_bss
+
+
+
+Lab3_cortex_m4.elf:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+20000000 l    d  .data	00000000 .data
+20000000 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 startup.c
+20000000 l       .bss	00000400 Stack_top
+00000000 l    df *ABS*	00000000 main.c
+000000a8 g     F .text	00000084 reset_handler
+0000009c  w    F .text	0000000c NMI_handler
+20000000 g       .data	00000000 _E_data
+20000000 g       .data	00000000 _S_data
+20000400 g       .bss	00000000 _E_bss
+20000000 g       .bss	00000000 _S_bss
+00000010 g     F .text	0000008c main
+0000009c  w    F .text	0000000c H_fault_handler
+00000000 g     O .text	00000010 g_p_fn_vectors
+0000012c g       .text	00000000 _E_text
+0000009c g     F .text	0000000c Default_handler
+
+
+
+Lab3_cortex_m4.axf:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+20000000 l    d  .data	00000000 .data
+20000000 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 startup.c
+20000000 l       .bss	00000400 Stack_top
+00000000 l    df *ABS*	00000000 main.c
+000000a8 g     F .text	00000084 reset_handler
+0000009c  w    F .text	0000000c NMI_handler
+20000000 g       .data	00000000 _E_data
+20000000 g       .data	00000000 _S_data
+20000400 g       .bss	00000000 _E_bss
+20000000 g       .bss	00000000 _S_bss
+00000010 g     F .text	0000008c main
+0000009c  w    F .text	0000000c H_fault_handler
+00000000 g     O .text	00000010 g_p_fn_vectors
+0000012c g       .text	00000000 _E_text
+0000009c g     F .text	0000000c Default_handler
+
+
